@@ -1,0 +1,1386 @@
+<!doctype html>
+<!-- 更新：2026-08-17 22:30（Asia/Shanghai）｜由 ai-html-courseware manifest 生成 -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文化仪式三层落地实操课｜图文HTML培训课件</title>
+  <style data-source="assets/base.css">
+/* html-ppt :: base.css — reset + shared tokens + layout primitives */
+/* Default tokens. Themes in assets/themes/*.css override the :root block. */
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f7f8;
+  --surface: #ffffff;
+  --surface-2: #f2f2f4;
+  --border: rgba(0,0,0,.08);
+  --border-strong: rgba(0,0,0,.16);
+  --text-1: #111216;
+  --text-2: #55596a;
+  --text-3: #8a8f9e;
+  --accent: #3b6cff;
+  --accent-2: #7a5cff;
+  --accent-3: #ff5c8a;
+  --good: #1aaf6c;
+  --warn: #f5a524;
+  --bad:  #e0445a;
+  --grad: linear-gradient(135deg,#3b6cff,#7a5cff 55%,#ff5c8a);
+  --grad-soft: linear-gradient(135deg,#eef2ff,#f5ecff 55%,#ffeef5);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --radius-lg: 26px;
+  --shadow: 0 10px 30px rgba(18,24,40,.08), 0 2px 6px rgba(18,24,40,.04);
+  --shadow-lg: 0 24px 60px rgba(18,24,40,.14), 0 6px 16px rgba(18,24,40,.06);
+  --font-sans: 'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
+  --font-serif: 'Playfair Display','Noto Serif SC',Georgia,serif;
+  --font-mono: 'JetBrains Mono','IBM Plex Mono',SFMono-Regular,Menlo,monospace;
+  --font-display: var(--font-sans);
+  --letter-tight: -.03em;
+  --letter-normal: -.01em;
+  --ease: cubic-bezier(.4,0,.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text-1);
+  font-family:var(--font-sans);font-weight:400;line-height:1.6;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  letter-spacing:var(--letter-normal)}
+img,svg,video{max-width:100%;display:block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+code,kbd,pre,samp{font-family:var(--font-mono)}
+
+/* ================= SLIDE SYSTEM ================= */
+.deck{position:relative;width:100vw;height:100vh;overflow:hidden;background:var(--bg)}
+.slide{
+  position:absolute;inset:0;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:72px 96px;
+  box-sizing:border-box;
+  opacity:0;pointer-events:none;
+  transition:opacity .5s var(--ease), transform .5s var(--ease);
+  transform:translateX(30px);
+  overflow:hidden;
+}
+.slide.is-active{opacity:1;pointer-events:auto;transform:translateX(0);z-index:2}
+.slide.is-prev{transform:translateX(-30px)}
+
+/* single-page standalone (used when a layout file is opened directly) */
+body.single .slide{position:relative;width:100vw;height:100vh;opacity:1;transform:none;pointer-events:auto}
+
+/* ================= TYPOGRAPHY ================= */
+.eyebrow{font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3)}
+.kicker{font-size:14px;font-weight:600;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
+h1.title,.h1{font-family:var(--font-display);font-size:72px;line-height:1.05;font-weight:800;letter-spacing:var(--letter-tight);margin:0 0 18px;color:var(--text-1)}
+h2.title,.h2{font-family:var(--font-display);font-size:54px;line-height:1.1;font-weight:700;letter-spacing:var(--letter-tight);margin:0 0 14px}
+h3,.h3{font-size:32px;line-height:1.2;font-weight:600;letter-spacing:var(--letter-normal);margin:0 0 10px}
+h4,.h4{font-size:22px;line-height:1.3;font-weight:600;margin:0 0 8px}
+.lede{font-size:22px;line-height:1.55;color:var(--text-2);font-weight:300;max-width:62ch}
+.dim{color:var(--text-2)}
+.dim2{color:var(--text-3)}
+.mono{font-family:var(--font-mono)}
+.serif{font-family:var(--font-serif)}
+.gradient-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+
+/* ================= LAYOUT PRIMITIVES ================= */
+.stack>*+*{margin-top:14px}
+.row{display:flex;gap:24px;align-items:center}
+.row.wrap{flex-wrap:wrap}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.center{display:flex;align-items:center;justify-content:center;text-align:center}
+.fill{flex:1}
+.sp-t{padding-top:24px}.sp-b{padding-bottom:24px}
+.mt-s{margin-top:8px}.mt-m{margin-top:18px}.mt-l{margin-top:32px}
+.mb-s{margin-bottom:8px}.mb-m{margin-bottom:18px}.mb-l{margin-bottom:32px}
+
+/* ================= CARDS ================= */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:26px 28px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.card-soft{background:var(--surface-2);border:1px solid var(--border)}
+.card-outline{background:transparent;border:1.5px solid var(--border-strong);box-shadow:none}
+.card-accent{background:var(--surface);border-top:3px solid var(--accent)}
+.card-hover{transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.card-hover:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+
+.pill{display:inline-block;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:500;
+  background:var(--surface-2);color:var(--text-2);border:1px solid var(--border)}
+.pill-accent{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);border-color:color-mix(in srgb,var(--accent) 28%,transparent)}
+
+/* ================= BARS / DIVIDERS ================= */
+.divider{height:1px;background:var(--border);width:100%}
+.divider-accent{height:3px;width:72px;background:var(--accent);border-radius:2px}
+
+/* ================= CHROME (header/footer/progress) ================= */
+.deck-header{position:absolute;top:24px;left:40px;right:40px;display:flex;align-items:center;justify-content:space-between;
+  font-size:12px;color:var(--text-3);letter-spacing:.12em;text-transform:uppercase;z-index:10;pointer-events:none}
+.deck-footer{position:absolute;bottom:24px;left:40px;right:40px;display:flex;align-items:center;justify-content:space-between;
+  font-size:12px;color:var(--text-3);z-index:10;pointer-events:none}
+.slide-number::before{content:attr(data-current)}
+.slide-number::after{content:" / " attr(data-total)}
+.progress-bar{position:fixed;left:0;right:0;bottom:0;height:3px;background:transparent;z-index:20}
+.progress-bar > span{display:block;height:100%;width:0;background:var(--accent);transition:width .3s var(--ease)}
+
+/* ================= PRESENTER / OVERVIEW ================= */
+.notes{display:none!important}
+.notes-overlay{position:fixed;inset:auto 0 0 0;max-height:42vh;background:rgba(20,22,30,.95);color:#e8ebf4;
+  padding:20px 32px;font-size:16px;line-height:1.6;border-top:1px solid rgba(255,255,255,.1);transform:translateY(100%);
+  transition:transform .3s var(--ease);z-index:40;overflow:auto;font-family:var(--font-sans)}
+.notes-overlay.open{transform:translateY(0)}
+.overview{position:fixed;inset:0;background:rgba(10,12,18,.92);backdrop-filter:blur(12px);z-index:50;
+  display:none;padding:40px;overflow:auto}
+.overview.open{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-content:start}
+.overview .thumb{background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  aspect-ratio:16/9;overflow:hidden;cursor:pointer;position:relative;color:var(--text-1);padding:16px;
+  font-size:11px;transition:transform .2s var(--ease)}
+.overview .thumb:hover{transform:scale(1.04)}
+.overview .thumb .n{position:absolute;top:8px;left:10px;font-weight:700;font-size:14px;color:var(--text-3)}
+.overview .thumb .t{position:absolute;bottom:10px;left:14px;right:14px;font-weight:600;color:var(--text-1)}
+
+/* ================= UTILITY ================= */
+.hidden{display:none!important}
+.nowrap{white-space:nowrap}
+.tr{text-align:right}.tc{text-align:center}.tl{text-align:left}
+.uppercase{text-transform:uppercase;letter-spacing:.12em}
+
+/* ================= PRINT ================= */
+@media print{
+  .slide{position:relative;opacity:1!important;transform:none!important;page-break-after:always;height:100vh}
+  .deck-header,.deck-footer,.progress-bar,.notes-overlay,.overview{display:none!important}
+}
+
+</style>
+  <style data-source="assets/animations/animations.css">
+/* html-ppt :: animations.css
+ * Apply by adding class="anim-<name>" or data-anim="<name>".
+ * Durations are deliberately snappy; tweak --anim-dur per element.
+ */
+:root{--anim-dur:.7s;--anim-ease:cubic-bezier(.4,0,.2,1)}
+
+/* ---------- FADE DIRECTIONALS ---------- */
+@keyframes kf-fade-up{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+@keyframes kf-fade-down{from{opacity:0;transform:translateY(-32px)}to{opacity:1;transform:none}}
+@keyframes kf-fade-left{from{opacity:0;transform:translateX(-40px)}to{opacity:1;transform:none}}
+@keyframes kf-fade-right{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:none}}
+.anim-fade-up{animation:kf-fade-up var(--anim-dur) var(--anim-ease) both}
+.anim-fade-down{animation:kf-fade-down var(--anim-dur) var(--anim-ease) both}
+.anim-fade-left{animation:kf-fade-left var(--anim-dur) var(--anim-ease) both}
+.anim-fade-right{animation:kf-fade-right var(--anim-dur) var(--anim-ease) both}
+
+/* ---------- RISE / DROP / ZOOM / BLUR / GLITCH ---------- */
+@keyframes kf-rise{from{opacity:0;transform:translateY(60px) scale(.97);filter:blur(6px)}to{opacity:1;transform:none;filter:none}}
+@keyframes kf-drop{from{opacity:0;transform:translateY(-60px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes kf-zoom{0%{opacity:0;transform:scale(.6)}60%{transform:scale(1.04)}100%{opacity:1;transform:scale(1)}}
+@keyframes kf-blur{from{opacity:0;filter:blur(18px)}to{opacity:1;filter:none}}
+@keyframes kf-glitch{0%{opacity:0;transform:translateX(0);clip-path:inset(0 0 0 0)}
+  20%{opacity:1;transform:translateX(-6px);clip-path:inset(20% 0 30% 0)}
+  40%{transform:translateX(4px);clip-path:inset(50% 0 10% 0)}
+  60%{transform:translateX(-3px);clip-path:inset(10% 0 60% 0)}
+  80%{transform:translateX(2px);clip-path:inset(0 0 0 0)}
+  100%{opacity:1;transform:none}}
+.anim-rise-in{animation:kf-rise .9s var(--anim-ease) both}
+.anim-drop-in{animation:kf-drop .8s var(--anim-ease) both}
+.anim-zoom-pop{animation:kf-zoom .7s cubic-bezier(.22,1.3,.36,1) both}
+.anim-blur-in{animation:kf-blur .8s var(--anim-ease) both}
+.anim-glitch-in{animation:kf-glitch .8s steps(5,end) both}
+
+/* ---------- TYPEWRITER ---------- */
+.anim-typewriter{display:inline-block;overflow:hidden;white-space:nowrap;border-right:2px solid currentColor;
+  width:0;animation:kf-type 2.4s steps(40,end) forwards, kf-caret 1s step-end infinite}
+@keyframes kf-type{to{width:100%}}
+@keyframes kf-caret{50%{border-color:transparent}}
+
+/* ---------- GLOW / SHIMMER / GRADIENT-FLOW ---------- */
+@keyframes kf-neon{0%,100%{text-shadow:0 0 8px var(--accent),0 0 20px var(--accent)}
+  50%{text-shadow:0 0 16px var(--accent),0 0 40px var(--accent),0 0 80px var(--accent)}}
+.anim-neon-glow{animation:kf-neon 2s ease-in-out infinite}
+
+.anim-shimmer-sweep{position:relative;overflow:hidden}
+.anim-shimmer-sweep::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(110deg,transparent 40%,rgba(255,255,255,.55) 50%,transparent 60%);
+  transform:translateX(-100%);animation:kf-shimmer 2.4s var(--anim-ease) infinite}
+@keyframes kf-shimmer{to{transform:translateX(100%)}}
+
+.anim-gradient-flow{background:linear-gradient(90deg,var(--accent),var(--accent-2,var(--accent)),var(--accent-3,var(--accent)),var(--accent));
+  background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+  animation:kf-gradflow 4s linear infinite}
+@keyframes kf-gradflow{to{background-position:300% 0}}
+
+/* ---------- STAGGER LIST ---------- */
+.anim-stagger-list > *{opacity:0;animation:kf-rise .65s var(--anim-ease) both}
+.anim-stagger-list > *:nth-child(1){animation-delay:.05s}
+.anim-stagger-list > *:nth-child(2){animation-delay:.15s}
+.anim-stagger-list > *:nth-child(3){animation-delay:.25s}
+.anim-stagger-list > *:nth-child(4){animation-delay:.35s}
+.anim-stagger-list > *:nth-child(5){animation-delay:.45s}
+.anim-stagger-list > *:nth-child(6){animation-delay:.55s}
+.anim-stagger-list > *:nth-child(7){animation-delay:.65s}
+.anim-stagger-list > *:nth-child(8){animation-delay:.75s}
+.anim-stagger-list > *:nth-child(n+9){animation-delay:.85s}
+
+/* ---------- COUNTER-UP (JS-driven, marker class only) ---------- */
+.counter{font-variant-numeric:tabular-nums}
+
+/* ---------- SVG PATH DRAW ---------- */
+.anim-path-draw path,.anim-path-draw line,.anim-path-draw polyline,.anim-path-draw circle,.anim-path-draw rect{
+  stroke-dasharray:1000;stroke-dashoffset:1000;animation:kf-draw 2s var(--anim-ease) forwards}
+@keyframes kf-draw{to{stroke-dashoffset:0}}
+
+/* ---------- PARALLAX TILT (hover) ---------- */
+.anim-parallax-tilt{transform-style:preserve-3d;transition:transform .4s var(--anim-ease)}
+.anim-parallax-tilt:hover{transform:perspective(900px) rotateX(6deg) rotateY(-8deg) translateZ(10px)}
+
+/* ---------- CARD FLIP 3D ---------- */
+@keyframes kf-flip{from{transform:perspective(1200px) rotateY(-90deg);opacity:0}
+  to{transform:perspective(1200px) rotateY(0);opacity:1}}
+.anim-card-flip-3d{animation:kf-flip .9s var(--anim-ease) both;transform-style:preserve-3d;backface-visibility:hidden}
+
+/* ---------- CUBE ROTATE 3D ---------- */
+@keyframes kf-cube{from{transform:perspective(1200px) rotateX(20deg) rotateY(-90deg) translateZ(-200px);opacity:0}
+  to{transform:perspective(1200px) rotateX(0) rotateY(0) translateZ(0);opacity:1}}
+.anim-cube-rotate-3d{animation:kf-cube 1s var(--anim-ease) both}
+
+/* ---------- PAGE TURN 3D ---------- */
+@keyframes kf-pageturn{from{transform:perspective(1600px) rotateY(-85deg);transform-origin:left center;opacity:0}
+  to{transform:perspective(1600px) rotateY(0);opacity:1}}
+.anim-page-turn-3d{animation:kf-pageturn 1s var(--anim-ease) both;transform-origin:left center}
+
+/* ---------- PERSPECTIVE ZOOM ---------- */
+@keyframes kf-pzoom{from{opacity:0;transform:perspective(1400px) translateZ(-400px) rotateX(12deg)}
+  to{opacity:1;transform:none}}
+.anim-perspective-zoom{animation:kf-pzoom 1s var(--anim-ease) both}
+
+/* ---------- MARQUEE SCROLL ---------- */
+.anim-marquee-scroll{display:flex;gap:48px;white-space:nowrap;animation:kf-marquee 20s linear infinite}
+@keyframes kf-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- KEN BURNS ---------- */
+@keyframes kf-kenburns{0%{transform:scale(1) translate(0,0)}100%{transform:scale(1.15) translate(-2%,-1%)}}
+.anim-kenburns{animation:kf-kenburns 14s ease-in-out infinite alternate}
+
+/* ---------- CONFETTI BURST (pseudo — pure CSS sparkles) ---------- */
+.anim-confetti-burst{position:relative}
+.anim-confetti-burst::before,.anim-confetti-burst::after{
+  content:"";position:absolute;top:50%;left:50%;width:8px;height:8px;border-radius:50%;
+  background:var(--accent);box-shadow:
+    20px -30px 0 var(--accent-2,var(--accent)),-25px -20px 0 var(--accent-3,var(--accent)),
+    30px 20px 0 var(--good,#1aaf6c),-30px 25px 0 var(--warn,#f5a524),
+    40px -10px 0 var(--bad,#e0445a),-45px 0 0 var(--accent),
+    10px 40px 0 var(--accent-2,var(--accent)),-15px -40px 0 var(--accent-3,var(--accent));
+  opacity:0;animation:kf-confetti 1.2s var(--anim-ease) forwards}
+.anim-confetti-burst::after{animation-delay:.15s;transform:rotate(45deg)}
+@keyframes kf-confetti{0%{opacity:0;transform:scale(.2)}30%{opacity:1}100%{opacity:0;transform:scale(2.2)}}
+
+/* ---------- SPOTLIGHT ---------- */
+@keyframes kf-spot{0%{clip-path:circle(0% at 50% 50%)}100%{clip-path:circle(140% at 50% 50%)}}
+.anim-spotlight{animation:kf-spot 1.1s var(--anim-ease) both}
+
+/* ---------- MORPH SHAPE (SVG) ---------- */
+.anim-morph-shape path{animation:kf-morph 6s ease-in-out infinite alternate}
+@keyframes kf-morph{0%{d:path("M60,120 Q120,20 180,120 T300,120")}
+  100%{d:path("M60,120 Q120,220 180,120 T300,120")}}
+
+/* ---------- RIPPLE REVEAL ---------- */
+@keyframes kf-ripple{0%{clip-path:circle(0% at 20% 80%);opacity:.4}
+  100%{clip-path:circle(160% at 20% 80%);opacity:1}}
+.anim-ripple-reveal{animation:kf-ripple 1.2s var(--anim-ease) both}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce){
+  [class*="anim-"]{animation:none!important;transition:none!important}
+}
+
+</style>
+  <style data-source="assets/system-fonts.css">
+/*
+ * V4 offline font baseline.
+ * Created: 2026-07-16 18:07 (Asia/Shanghai)
+ * Uses only operating-system fonts; no webfont or network dependency.
+ */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", Arial, sans-serif;
+  --font-serif: "Songti SC", STSong, SimSun, "Times New Roman", serif;
+  --font-mono: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  --font-display: var(--font-sans);
+}
+
+html,
+body,
+.lesson01-v02,
+.lesson01-v02 .sidebar,
+.lesson01-v02 .main {
+  font-family: var(--font-sans);
+}
+
+.lesson01-v02 code,
+.lesson01-v02 kbd,
+.lesson01-v02 pre,
+.lesson01-v02 samp,
+.lesson01-v02 .mono {
+  font-family: var(--font-mono);
+}
+
+.lesson01-v02 .serif {
+  font-family: var(--font-serif);
+}
+
+</style>
+  <style data-source="style.css">
+:root {
+  --paper: #ffffff;
+  --ink: #333333;
+  --ink-2: #666666;
+  --line: rgba(51, 51, 51, 0.22);
+  --orange: #ff7337;
+  --orange-dark: #e85619;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Inter, "Noto Sans SC", -apple-system, BlinkMacSystemFont,
+    "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+.courseware-deck .deck {
+  height: 100vh;
+  height: 100dvh;
+}
+
+.courseware-deck .slide {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100%;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: clamp(6px, 1vh, 14px);
+  justify-content: stretch;
+  padding: clamp(12px, 1.8vh, 28px) clamp(24px, 1.9vw, 36px)
+    clamp(10px, 2vh, 32px);
+  background:
+    linear-gradient(rgba(51, 51, 51, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(51, 51, 51, 0.022) 1px, transparent 1px),
+    var(--paper);
+  background-size: 64px 64px;
+}
+
+.slide-header {
+  height: clamp(24px, 4.2vh, 44px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--line);
+  color: var(--ink-2);
+  font-size: clamp(14px, 2vh, 22px);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.slide-header b {
+  color: var(--orange);
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+.slide-main {
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+}
+
+.kicker {
+  margin: 0 0 5px;
+  color: var(--orange);
+  font-size: clamp(14px, 1.8vh, 20px);
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+h1 {
+  margin: 0;
+  color: #202020;
+  font-size: clamp(26px, 4.3vh, 48px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1.12;
+}
+
+.visual-stage {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  margin-top: clamp(6px, 1.2vh, 14px);
+  overflow: hidden;
+  background: var(--paper);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.visual-stage img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.courseware-deck .deck-footer {
+  position: static;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: var(--ink-2);
+  font-size: clamp(12px, 1.7vh, 18px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.deck-footer span:last-child {
+  color: var(--orange-dark);
+  text-align: right;
+}
+
+.notes {
+  display: none;
+}
+
+@media (max-aspect-ratio: 4 / 3) {
+  .courseware-deck .slide {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+</style>
+  <style data-source="2027-strategy-inspired-layout">
+:root {
+  --bg: #fffaf4;
+  --bg-soft: #fff0df;
+  --surface: #fff;
+  --text-1: #25231f;
+  --text-2: #625d55;
+  --text-3: #9a9288;
+  --accent: #f97316;
+  --accent-2: #fb923c;
+  --accent-3: #ea580c;
+  --border: rgba(194,65,12,.14);
+  --grad: linear-gradient(135deg,#c2410c 0%,#f97316 52%,#fdba74 100%);
+  --ease: cubic-bezier(.22,1,.36,1);
+  --font-sans: Inter,"PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --font-display: var(--font-sans);
+}
+html,body { width:100%;height:100%;margin:0;overflow:hidden; }
+body.courseware-deck { background:#151515;color:var(--text-1);font-family:var(--font-sans); }
+.courseware-deck .deck {
+  position:fixed;left:50%;top:50%;width:1600px;height:900px;
+  transform:translate(-50%,-50%) scale(var(--deck-scale,1));transform-origin:center;
+  overflow:hidden;background:var(--bg);box-shadow:0 30px 100px rgba(0,0,0,.45);
+}
+.courseware-deck .slide {
+  position:absolute;inset:0;width:1600px;height:900px;
+  display:grid;grid-template-rows:40px minmax(0,1fr) 30px;gap:10px;
+  padding:28px 68px 18px;overflow:hidden;
+  background:linear-gradient(115deg,#fff 0%,#fffaf4 66%,#fff0df 100%);
+  opacity:0;pointer-events:none;transform:translateX(42px) scale(.992);
+  transition:opacity .42s ease,transform .58s var(--ease);
+}
+.courseware-deck .slide::before,.courseware-deck .slide::after {
+  content:"";position:absolute;border-radius:50%;pointer-events:none;
+}
+.courseware-deck .slide::before {
+  right:-180px;top:-220px;width:620px;height:620px;
+  background:radial-gradient(circle,rgba(249,115,22,.13),transparent 68%);
+}
+.courseware-deck .slide::after {
+  left:-130px;bottom:-210px;width:420px;height:420px;
+  background:radial-gradient(circle,rgba(253,186,116,.14),transparent 70%);
+}
+.courseware-deck .slide:first-child {
+  background:linear-gradient(112deg,#fffdf9 0%,#fff7ed 58%,#ffedd5 100%);
+}
+.courseware-deck .slide:last-child {
+  background:linear-gradient(112deg,#fffaf4 0%,#fff0df 62%,#fed7aa 100%);
+}
+.courseware-deck .slide.is-active { opacity:1;pointer-events:auto;transform:none;z-index:2; }
+.courseware-deck .slide.is-prev { transform:translateX(-42px) scale(.992); }
+.courseware-deck .slide-header,
+.courseware-deck .slide-main,
+.courseware-deck .deck-footer { position:relative;z-index:1; }
+.courseware-deck .slide-header {
+  height:40px;display:flex;align-items:center;justify-content:space-between;
+  border:0;border-bottom:1px solid rgba(194,65,12,.16);
+  color:#9a3412;font-size:16px;font-weight:800;letter-spacing:.08em;
+}
+.courseware-deck .slide-header span { display:flex;align-items:center;gap:12px; }
+.courseware-deck .slide-header span::before {
+  content:"中膳";display:inline-grid;place-items:center;width:42px;height:26px;
+  border-radius:8px;color:#fff;background:var(--grad);font-size:13px;letter-spacing:0;
+  box-shadow:0 5px 12px rgba(194,65,12,.18);
+}
+.courseware-deck .slide-header b {
+  min-width:86px;padding:6px 12px;border-radius:999px;
+  color:#9a3412;background:rgba(249,115,22,.10);
+  text-align:center;font-size:14px;font-weight:800;letter-spacing:.04em;
+}
+.courseware-deck .slide-main {
+  display:grid;grid-template-rows:22px auto minmax(0,1fr);gap:6px;min-height:0;
+}
+.courseware-deck .kicker {
+  margin:0;color:#c2410c;font-size:15px;line-height:22px;
+  font-weight:850;letter-spacing:.14em;
+}
+.courseware-deck h1 {
+  margin:0;color:#25231f;font-size:48px;line-height:1.12;
+  font-weight:900;letter-spacing:-.045em;white-space:nowrap;
+}
+.courseware-deck .slide:first-child h1 { font-size:58px; }
+.courseware-deck .visual-stage {
+  display:flex;align-items:center;justify-content:center;width:100%;height:100%;min-height:0;
+  margin:0;padding:8px;overflow:hidden;border-radius:22px;
+  background:#fff;border:1px solid rgba(194,65,12,.12);
+  box-shadow:0 24px 60px rgba(154,52,18,.12),0 4px 12px rgba(154,52,18,.05);
+}
+.courseware-deck .visual-stage img {
+  display:block;width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;
+}
+.courseware-deck .deck-footer {
+  position:relative;left:auto;right:auto;bottom:auto;display:flex;align-items:center;
+  justify-content:space-between;gap:70px;min-width:0;
+  color:#756b62;font-size:15px;font-weight:600;line-height:1.25;
+}
+.courseware-deck .deck-footer span:first-child { flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+.courseware-deck .deck-footer span:last-child { max-width:47%;color:#c2410c;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
+.courseware-deck .progress-bar { position:fixed;z-index:30;left:0;right:0;bottom:0;height:4px;background:rgba(255,255,255,.08); }
+.courseware-deck .progress-bar span { background:var(--grad);transition:width .35s var(--ease); }
+.cw-nav {
+  position:fixed;z-index:31;left:50%;bottom:17px;transform:translateX(-50%);
+  display:flex;align-items:center;gap:9px;padding:7px 11px;border-radius:999px;
+  color:#fff;background:rgba(18,18,18,.72);border:1px solid rgba(255,255,255,.14);
+  backdrop-filter:blur(14px);opacity:.42;transition:opacity .25s ease;
+}
+.cw-nav:hover,.cw-nav:focus-within { opacity:1; }
+.cw-nav button {
+  width:35px;height:30px;padding:0;border:0;border-radius:20px;color:#fff;
+  background:transparent;font:18px var(--font-sans);cursor:pointer;
+}
+.cw-nav button:hover,.cw-nav button:focus-visible { background:rgba(255,255,255,.14);outline:none; }
+.cw-nav button:disabled { opacity:.3;cursor:default; }
+.cw-nav span { min-width:68px;text-align:center;font:12px var(--font-sans);letter-spacing:.08em; }
+.cw-nav i { width:1px;height:18px;background:rgba(255,255,255,.2); }
+.courseware-deck .overview {
+  position:fixed;z-index:45;inset:0;display:none;padding:38px;overflow:auto;
+  background:rgba(17,17,17,.95);backdrop-filter:blur(18px);
+}
+.courseware-deck .overview.open {
+  display:grid;grid-template-columns:repeat(5,minmax(190px,1fr));gap:18px;align-content:start;
+}
+.courseware-deck .overview .thumb {
+  min-height:115px;aspect-ratio:auto;padding:18px;border-radius:17px;
+  background:linear-gradient(135deg,#fffaf4,#ffedd5);border:2px solid transparent;
+  box-shadow:0 12px 35px rgba(0,0,0,.25);text-align:left;cursor:pointer;
+}
+.courseware-deck .overview .thumb:hover { transform:translateY(-4px);border-color:#f97316; }
+.courseware-deck .overview .thumb .n { position:static;color:#c2410c;font-size:17px;font-weight:900; }
+.courseware-deck .overview .thumb .t { position:static;margin-top:10px;color:#25231f;font-size:15px;line-height:1.35; }
+.courseware-deck .notes-overlay { border-top-color:rgba(249,115,22,.38); }
+@media (max-width:760px) {
+  .courseware-deck .overview.open { grid-template-columns:repeat(2,minmax(0,1fr));padding:20px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .courseware-deck .slide,.cw-nav,.courseware-deck .progress-bar span { transition:none!important; }
+}
+@media print {
+  html,body,body.courseware-deck { width:auto;height:auto;overflow:visible;background:#fff; }
+  .courseware-deck .deck { position:static;width:1600px;height:auto;transform:none;overflow:visible;box-shadow:none; }
+  .courseware-deck .slide { position:relative;width:1600px;height:900px;opacity:1!important;transform:none!important;page-break-after:always;pointer-events:auto; }
+  .cw-nav,.courseware-deck .progress-bar,.courseware-deck .notes-overlay,.courseware-deck .overview { display:none!important; }
+}
+  </style>
+</head>
+<body class="courseware-deck">
+  <div class="deck">
+    <section class="slide visual-slide" data-title="01 文化仪式三层落地实操课">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>01 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">开场</p>
+        <h1>文化仪式三层落地实操课</h1>
+        <div class="visual-stage"><img src="p01-main.webp" alt="三层舞台：治理、经营支持、现场微仪式。 核心节点：总部/事业部：治理与大型活动；分子公司：季度轮换与支持；项目门店：10分钟微仪式；看得见、做得到、留得住"></div>
+      </main>
+      <footer class="deck-footer"><span>界定课程用途和三层对象。</span><span>下一页：一套仪式素材库，三份分层执行书</span></footer>
+      <div class="notes">来源：仪式完整版前言、第零篇；三份分层方案前言。讲师要点：本课不是活动创意课，先讲主数据与边界，再讲 SOP。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="02 一套仪式素材库，三份分层执行书">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>02 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">使用方法</p>
+        <h1>一套仪式素材库，三份分层执行书</h1>
+        <div class="visual-stage"><img src="p02-main.webp" alt="文档关系图：完整版居中，三份层级执行书向外展开。 核心节点：仪式标准素材库；唯一主数据（V3.0）；集团/事业部、分子公司、项目门店；承接、替代与边界"></div>
+      </main>
+      <footer class="deck-footer"><span>说明四份方案的主从关系。</span><span>下一页：先选对，再照SOP执行</span></footer>
+      <div class="notes">来源：仪式完整版前言、0.1、0.2。讲师要点：不能从完整版直接把大型方案压给门店；要以分层方案为执行依据。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="03 先选对，再照SOP执行">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>03 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">总控</p>
+        <h1>先选对，再照SOP执行</h1>
+        <div class="visual-stage"><img src="p03-main.webp" alt="原文“是否属于仪式—层级主办—反馈复盘”流程。 核心节点：第九篇年度节点；属于仪式吗？；哪个层级主办？；记录真实反馈；复盘并更新SOP"></div>
+      </main>
+      <footer class="deck-footer"><span>先学选择仪式的总控流程。</span><span>下一页：先按唯一主数据排任务</span></footer>
+      <div class="notes">来源：仪式完整版第零篇。讲师要点：非仪式事项应回到培训、测评、经营、合规流程；不借仪式绕开正式机制。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="04 先按唯一主数据排任务">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>04 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">总控</p>
+        <h1>先按唯一主数据排任务</h1>
+        <div class="visual-stage"><img src="p04-main.webp" alt="九类动作 × 三层责任矩阵。 核心节点：治理、深度学习、重大活动、学习认证、人员关键时刻、日常温度、创新分享、大型关怀、境界与表彰；主办/支持/参与；必做、试点、可选、触发"></div>
+      </main>
+      <footer class="deck-footer"><span>锁定唯一主数据的七类动作与层级安排。</span><span>下一页：仪式有温度，更要有边界</span></footer>
+      <div class="notes">来源：仪式完整版 0.1。讲师要点：“必做确认”不等于强迫公开参与；不同状态与频率必须保留。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="05 仪式有温度，更要有边界">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>05 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">边界</p>
+        <h1>仪式有温度，更要有边界</h1>
+        <div class="visual-stage"><img src="p05-main.webp" alt="六瓣规则盘，每项配一个禁止符号。 核心节点：同意、安全、不造活动、不垫资、不重复开会、不拿照片验收"></div>
+      </main>
+      <footer class="deck-footer"><span>掌握六条不可省规则。</span><span>下一页：总部定标准，分子公司组织支持，门店轻量执行</span></footer>
+      <div class="notes">来源：仪式完整版 0.3。讲师要点：本页必须可见，不放备注：同意、升级、N/A、物料、嵌入既有会议、验收看反馈/关闭/改善。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="06 总部定标准，分子公司组织支持，门店轻量执行">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>06 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">分层</p>
+        <h1>总部定标准，分子公司组织支持，门店轻量执行</h1>
+        <div class="visual-stage"><img src="p06-main.webp" alt="三层年度节奏带，标明主办/支持/触发。 核心节点：集团“文化治理机制、问商道、学习认证、年度文化盛典、上界、仪式SOP标准化”；分子公司“主导/执行的仪式全景、季度三选一”；门店“9个一线微仪式、每月固定仅感恩便签”"></div>
+      </main>
+      <footer class="deck-footer"><span>建立三层角色与年度节奏的全景。</span><span>下一页：把学习做成可分享、可积累的行为</span></footer>
+      <div class="notes">来源：《2026年度文化执行总日历》；集团篇第二、三、七篇；分子公司篇第二、四篇；项目门店篇第二、三篇。讲师要点：唯一执行基线为《2026年度文化执行总日历》；上界仅Q2、Q4有获批名单时举办。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="07 把学习做成可分享、可积累的行为">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>07 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">学习文化</p>
+        <h1>把学习做成可分享、可积累的行为</h1>
+        <div class="visual-stage"><img src="p07-main.webp" alt="四张仪式卡，从学习到应用到认证。 核心节点：一书一策；问商道·巅峰案例擂台；知识集市；学霸认证；入耳、入行、入心"></div>
+      </main>
+      <footer class="deck-footer"><span>先总览学习文化的四个仪式。</span><span>下一页：一书一策：读完要产出一条可试的改进</span></footer>
+      <div class="notes">来源：仪式完整版第一篇。讲师要点：后续四页按 SOP 展开；门店只使用原文允许的轻量替代，不办完整版。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="08 一书一策：读完要产出一条可试的改进">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>08 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">学习文化·SOP</p>
+        <h1>一书一策：读完要产出一条可试的改进</h1>
+        <div class="visual-stage"><img src="p08-main.webp" alt="五步时间线 + 两张工具卡。 核心节点：荐书启幕、精华讲述、一策共创、投票与承诺、书香传递；荐书卡片、一策试行承诺卡"></div>
+      </main>
+      <footer class="deck-footer"><span>掌握“一书一策”的五步 SOP。</span><span>下一页：问商道：用真实问题练战略思考</span></footer>
+      <div class="notes">来源：仪式完整版第一篇·仪式一；分子公司篇第三篇·仪式一。讲师要点：保留“下周就能试一试的小动作”与试行结果回到下季度分享会；推荐书单可调整的边界按原文。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="09 问商道：用真实问题练战略思考">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>09 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">学习文化·SOP</p>
+        <h1>问商道：用真实问题练战略思考</h1>
+        <div class="visual-stage"><img src="p09-main.webp" alt="五段擂台流程，旁列三层版本。 核心节点：案例发布、密室攻擂、巅峰对决、揭晓与复盘、授勋与传承；案例发布卡、攻擂评分表；总部版、区域版、门店微案例擂台"></div>
+      </main>
+      <footer class="deck-footer"><span>掌握“问商道”的案例推演结构与分层版本。</span><span>下一页：知识集市：让有用经验被看见、被使用</span></footer>
+      <div class="notes">来源：仪式完整版第一篇·仪式二；集团篇 3.2；分子公司篇第三篇·仪式二。讲师要点：案例涉敏时隐去客户和数字；不要把讨论会替代正式战略或合规决策。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="10 知识集市：让有用经验被看见、被使用">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>10 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">学习文化·SOP</p>
+        <h1>知识集市：让有用经验被看见、被使用</h1>
+        <div class="visual-stage"><img src="p10-main.webp" alt="市集五站路线；右侧标注门店 10 分钟轻量替代。 核心节点：开市、摊主秀、知识淘金、闭市授星、自由集市；知识集市分享登记卡、知识淘金便签模板；午间知识角"></div>
+      </main>
+      <footer class="deck-footer"><span>掌握“知识集市”的分享到行动闭环。</span><span>下一页：学习认证：里程碑触发，不把学习变成空奖状</span></footer>
+      <div class="notes">来源：仪式完整版第一篇·仪式三；分子公司篇第三篇·仪式三；项目门店篇第二篇·微仪式九。讲师要点：分享内容必须是亲身验证且别人可用的方法/经验/教训；线上替代按原文，不增设排名。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="11 学习认证：里程碑触发，不把学习变成空奖状">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>11 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">学习文化·认证</p>
+        <h1>学习认证：里程碑触发，不把学习变成空奖状</h1>
+        <div class="visual-stage"><img src="p11-main.webp" alt="“达标触发—认证—应用—记录”路径。 核心节点：完成年度学时要求、通过关键考核、提交岗位应用证据；认证获得者、直属上级/导师、HRBP/文化联络员；学习护照/档案；两级试点"></div>
+      </main>
+      <footer class="deck-footer"><span>说明学习认证的触发逻辑和总部职责。</span><span>下一页：被记住、被感谢、被体面告别</span></footer>
+      <div class="notes">来源：仪式完整版第一篇·仪式四；集团篇 3.3；仪式完整版 0.1。讲师要点：第一年度只试行“完成认证/完成应用”两级；不自动产生假期、培训名额或其他福利。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="12 被记住、被感谢、被体面告别">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>12 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">家文化</p>
+        <h1>被记住、被感谢、被体面告别</h1>
+        <div class="visual-stage"><img src="p12-main.webp" alt="员工旅程：加入—周年—家庭连接—感谢—离开。 核心节点：入职欢迎；入职周年；家庭开放日；感恩日；告别仪式；先征得本人同意"></div>
+      </main>
+      <footer class="deck-footer"><span>总览家文化五个关键时刻。</span><span>下一页：从第一天到第N年，让员工感到被记住</span></footer>
+      <div class="notes">来源：仪式完整版第二篇。讲师要点：家属参与、影像、公开表达均按同意与安全边界；不以“仪式完整”压过个人选择。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="13 从第一天到第N年，让员工感到被记住">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>13 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">家文化·加入</p>
+        <h1>从第一天到第N年，让员工感到被记住</h1>
+        <div class="visual-stage"><img src="p13-main.webp" alt="两段里程碑路径，分别展开“入职”和“周年”。 核心节点：“契约树·新叶初生”；“年轮·我在中膳的第N年”；文化内涵、仪式目标、适用场景、参与角色、流程模板、走心细节、可复制性、配套工具"></div>
+      </main>
+      <footer class="deck-footer"><span>讲清入职欢迎与入职周年的标准动作。</span><span>下一页：家庭开放日：先评估，再组织</span></footer>
+      <div class="notes">来源：仪式完整版第二篇·仪式一、二；分子公司篇第三篇·仪式四、五；门店篇微仪式一。讲师要点：细化时使用对应层级版本：门店入职欢迎为 10 分钟版；周年信物总部定、分子公司执行。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="14 家庭开放日：先评估，再组织">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>14 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">家文化·连接</p>
+        <h1>家庭开放日：先评估，再组织</h1>
+        <div class="visual-stage"><img src="p14-main.webp" alt="先决条件闸门 → 可执行流程 → 替代方案。 核心节点：家庭开放日——“家人·看见我的世界”；食安、场地、预算和审批评估；不进后厨；可用家属餐替代；年度/可选项目制"></div>
+      </main>
+      <footer class="deck-footer"><span>识别家庭开放日的项目制边界。</span><span>下一页：感恩日：一句真话被看见</span></footer>
+      <div class="notes">来源：仪式完整版第二篇·仪式三；仪式完整版 0.1、0.2；分子公司篇第三篇·仪式六。讲师要点：不是所有门店必做；未审批、条件不足时不能承诺或自行举办。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="15 感恩日：一句真话被看见">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>15 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">家文化·感谢</p>
+        <h1>感恩日：一句真话被看见</h1>
+        <div class="visual-stage"><img src="p15-main.webp" alt="一张便签从书写到感恩墙的短流程。 核心节点：感恩日——“谢谢你，被我看见”；感恩便签；门店唯一固定必做；每月1次；不用收、不用统计、不用评比"></div>
+      </main>
+      <footer class="deck-footer"><span>把感恩做成不统计、不评比的日常温度。</span><span>下一页：好好说再见：确认意愿比形式更重要</span></footer>
+      <div class="notes">来源：仪式完整版第二篇·仪式四；仪式完整版 0.1；门店篇微仪式三、第三篇。讲师要点：只要求真实表达；门店频率和三分钟流程按定稿，不把便签数量当作绩效。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="16 好好说再见：确认意愿比形式更重要">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>16 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">家文化·告别</p>
+        <h1>好好说再见：确认意愿比形式更重要</h1>
+        <div class="visual-stage"><img src="p16-main.webp" alt="三选一决策树，公开版展开为简短流程。 核心节点：告别仪式——“好好说再见”；公开版、安静版、不举办；本人选择公开版时；涉及纪律调查、争议或安全风险时先请HR判断；签名卡、合影可选"></div>
+      </main>
+      <footer class="deck-footer"><span>掌握告别仪式的选择权与风险边界。</span><span>下一页：把创新、传承、复盘做成团队行为</span></footer>
+      <div class="notes">来源：仪式完整版第二篇·仪式五；分子公司篇第三篇·仪式八；门店篇微仪式七、第三篇。讲师要点：员工选择不举办记为“已确认、不举办”，不作负面评价；照片不同意即不拍、不追问。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="17 把创新、传承、复盘做成团队行为">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>17 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">核心价值观</p>
+        <h1>把创新、传承、复盘做成团队行为</h1>
+        <div class="visual-stage"><img src="p17-main.webp" alt="三角结构：创新—传承—复盘。 核心节点：“疯狂星期二”——创新快闪日；“拜师礼·薪火相传”；“A3之夜”——失败分享与行动计划"></div>
+      </main>
+      <footer class="deck-footer"><span>总览创新、师徒、复盘三种价值观仪式。</span><span>下一页：让想法被回应，而不是被搁置</span></footer>
+      <div class="notes">来源：仪式完整版第三篇。讲师要点：三者均不是纯活动；必须分别连接改善、带教和问题解决。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="18 让想法被回应，而不是被搁置">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>18 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">创新文化</p>
+        <h1>让想法被回应，而不是被搁置</h1>
+        <div class="visual-stage"><img src="p18-main.webp" alt="总部/分子公司快闪与门店小黑板的双层对照。 核心节点：“疯狂星期二”；疯狂小黑板；不强制评奖，但必须回应；48小时内标记“已看见”；可行建议进入改善提案流程"></div>
+      </main>
+      <footer class="deck-footer"><span>学会“疯狂星期二”与门店疯狂小黑板的不同用法。</span><span>下一页：拜师礼：把“谁来带、怎么带”说清楚</span></footer>
+      <div class="notes">来源：仪式完整版第三篇·创新文化；分子公司篇第三篇·仪式九；门店篇微仪式八。讲师要点：需要资源或存在风险的建议向上反馈；暂不采纳也说明原因，不许把黑板内容当作考核排名。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="19 拜师礼：把“谁来带、怎么带”说清楚">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>19 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">师徒文化</p>
+        <h1>拜师礼：把“谁来带、怎么带”说清楚</h1>
+        <div class="visual-stage"><img src="p19-main.webp" alt="完整版与门店 5 分钟版并列流程。 核心节点：“拜师礼·薪火相传”；师父、徒弟、见证人；一杯茶、师徒公约、师徒握手/击掌；门店条件有限；三个月后检查徒弟能不能独立上岗"></div>
+      </main>
+      <footer class="deck-footer"><span>掌握拜师礼的角色、承诺与门店简版。</span><span>下一页：A3之夜：复盘失败，但不把风险留在会议室</span></footer>
+      <div class="notes">来源：仪式完整版第三篇·师徒文化；分子公司篇第三篇·仪式十；门店篇微仪式五。讲师要点：不能用私下“你带带他”替代当众明确责任；茶和物料可简化，责任与尊重不可省。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="20 A3之夜：复盘失败，但不把风险留在会议室">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>20 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">复盘文化</p>
+        <h1>A3之夜：复盘失败，但不把风险留在会议室</h1>
+        <div class="visual-stage"><img src="p20-main.webp" alt="A3 六步图外加“必须升级”红线门。 核心节点：“A3之夜”——失败分享与行动计划；问题描述、现状分析、根因分析、对策措施、效果确认、标准化；食安、合规、舞弊、人身安全；正式机制升级"></div>
+      </main>
+      <footer class="deck-footer"><span>把 A3 之夜与正式异常升级边界讲清。</span><span>下一页：已有仪式怎么优化，核心步骤不能省</span></footer>
+      <div class="notes">来源：仪式完整版第三篇·复盘文化；分子公司篇第三篇·仪式十一；仪式完整版 0.3。讲师要点：“不追责”不代表隐瞒或不处理风险；A3 是问题解决工具，不是表演或追责会。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="21 已有仪式怎么优化，核心步骤不能省">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>21 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">已有仪式</p>
+        <h1>已有仪式怎么优化，核心步骤不能省</h1>
+        <div class="visual-stage"><img src="p21-main.webp" alt="三个既有仪式卡 + 统一“可调范围”标尺。 核心节点：道法·庆生仪式；道法·入堂仪式；道法·表彰仪式；新增走心细节；差异化版本；不可调、可调、禁止"></div>
+      </main>
+      <footer class="deck-footer"><span>处理既有仪式的优化与不可调核心。</span><span>下一页：总部要输出文化产品与治理闭环</span></footer>
+      <div class="notes">来源：仪式完整版第四篇；集团篇 3.6.2。讲师要点：不可以物质福利替代仪式感；核心步骤、誓词、代号授予、徽章样式按总部统一要求。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="22 总部要输出文化产品与治理闭环">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>22 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">总部/事业部</p>
+        <h1>总部要输出文化产品与治理闭环</h1>
+        <div class="visual-stage"><img src="p22-main.webp" alt="七项责任的治理路线图，仪表盘反馈到 SOP 迭代。 核心节点：文化治理机制——文化联席会+健康度仪表盘；问商道；学霸认证体系；年度文化盛典；上界仪式；仪式SOP标准化；年度节奏"></div>
+      </main>
+      <footer class="deck-footer"><span>展开集团/事业部的七项治理与大型活动责任。</span><span>下一页：分子公司把仪式嵌进经营，不做活动堆叠</span></footer>
+      <div class="notes">来源：集团篇第三篇·仪式一至七。讲师要点：总部角色是设计者、标准制定者和资源支持者，不替下层逐个执行；验收不以开会和照片代替效果。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="23 分子公司把仪式嵌进经营，不做活动堆叠">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>23 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">分子公司</p>
+        <h1>分子公司把仪式嵌进经营，不做活动堆叠</h1>
+        <div class="visual-stage"><img src="p23-main.webp" alt="16 项仪式分为“主导/执行/支持”三栏，接受控年度日历。 核心节点：一书一策、问商道、知识集市、入职欢迎、入职周年、家庭开放日、感恩日、告别、疯狂星期二、拜师礼、A3之夜、庆生、入堂、表彰、就职、上界；年度文化执行总日历；从分子公司到门店；自检清单"></div>
+      </main>
+      <footer class="deck-footer"><span>展开分子公司的主导、执行、支持与受控日历。</span><span>下一页：9个微仪式，先把关键时刻做真</span></footer>
+      <div class="notes">来源：《2026年度文化执行总日历》；分子公司篇第二至六篇。讲师要点：同一季度深度学习三选一；知识集市每季度最多1次且可并入；上界仅Q2、Q4有名单时执行。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="24 9个微仪式，先把关键时刻做真">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>24 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">项目门店</p>
+        <h1>9个微仪式，先把关键时刻做真</h1>
+        <div class="visual-stage"><img src="p24-main.webp" alt="五张微仪式行动卡，标明触发时机、主理人、时长。 核心节点：入职欢迎、庆生、感恩便签、每月之星、拜师；迎新天使、认识伙伴、留下记忆；评选标准——不只看业绩；不用收、不用统计、不用评比"></div>
+      </main>
+      <footer class="deck-footer"><span>掌握门店前五个微仪式的 10/5/3 分钟版本。</span><span>下一页：就职、告别、改善、分享都要轻而有回应</span></footer>
+      <div class="notes">来源：门店篇第二篇·微仪式一至五；附录速查卡。讲师要点：照片、寿星信息、发言按本人意愿；奖品、经费及评选标准按原文和上级配置，不加新激励。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="25 就职、告别、改善、分享都要轻而有回应">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>25 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">项目门店</p>
+        <h1>就职、告别、改善、分享都要轻而有回应</h1>
+        <div class="visual-stage"><img src="p25-main.webp" alt="事件触发四格图；告别选择树和小黑板反馈环。 核心节点：新店长/新班长就职、告别、疯狂小黑板、午间知识角；公开版/安静版/不举办；48小时内标记“已看见”；自愿参加"></div>
+      </main>
+      <footer class="deck-footer"><span>掌握门店后四个微仪式及响应责任。</span><span>下一页：一页一个仪式：照着做，也知道什么时候不做</span></footer>
+      <div class="notes">来源：门店篇第二篇·微仪式六至九；附录速查卡。讲师要点：午间知识角不是培训任务；告别先确认意愿；改善建议的资源和风险问题向上反馈。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="26 一页一个仪式：照着做，也知道什么时候不做">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>26 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">实操导航</p>
+        <h1>一页一个仪式：照着做，也知道什么时候不做</h1>
+        <div class="visual-stage"><img src="p26-main.webp" alt="一张“单仪式实操页”解剖图，六个阅读入口指向同一模板。 核心节点：触发与频率；谁主办、谁参与；流程与时长；物料与话术；边界与验收；P27—P49逐页演练"></div>
+      </main>
+      <footer class="deck-footer"><span>说明后半程逐仪式页的统一使用方法。</span><span>下一页：一书一策：从阅读到一策试行</span></footer>
+      <div class="notes">来源：仪式完整版第零篇、第五篇；三份分层方案。讲师要点：后半程每页只讲一个仪式或治理机制；先判断是否触发及主办层级，再照流程执行，最后核对边界和真实反馈。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="27 一书一策：从阅读到一策试行">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>27 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>一书一策：从阅读到一策试行</h1>
+        <div class="visual-stage"><img src="p27-main.webp" alt="六步水平流程；下方放角色、时长与两张工具卡。 核心节点：荐书启幕、精华讲述、一策共创、投票与承诺、书香传递、行动确认；核心60分钟、扩展90分钟；分享人、主持人、参与者、智库中心/区域政委；荐书卡片、一策试行承诺卡"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练“一书一策”读书分享会。</span><span>下一页：问商道：案例推演不是抢答竞赛</span></footer>
+      <div class="notes">来源：仪式完整版第一篇·仪式一；分子公司篇第三篇·仪式一。讲师要点：分子公司标准流程按原文；门店不办完整版。散会前写清谁来试、何时完成、怎么看结果；试行结果后续回看，不因结果不佳追责。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="28 问商道：案例推演不是抢答竞赛">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>28 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>问商道：案例推演不是抢答竞赛</h1>
+        <div class="visual-stage"><img src="p28-main.webp" alt="五阶段图，旁列总部180分钟、区域90分钟和门店15分钟复盘边界。 核心节点：案例发布、分组攻擂、陈述质询、揭晓复盘、行动与入库；总部每半年1次、完整180分钟；区域每季度1次、简化90分钟；擂台主、攻擂队伍、评审团、观察团"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练“问商道·巅峰案例擂台”。</span><span>下一页：知识集市：一人一招，明天能用</span></footer>
+      <div class="notes">来源：仪式完整版第一篇·仪式二；集团篇第三篇·仪式二；分子公司篇第三篇·仪式二。讲师要点：真实案例须脱敏；评分用于讨论与学习，不替代正式战略决策；门店不另办擂台，只在真实问题发生时进入既有周会复盘。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="29 知识集市：一人一招，明天能用">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>29 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>知识集市：一人一招，明天能用</h1>
+        <div class="visual-stage"><img src="p29-main.webp" alt="市集五站动线，突出“自愿分享—写下怎么用—记录入库”。 核心节点：开市、摊主秀、知识淘金、闭市记录、行动确认；每季度最多1次、可并入一书一策；分享人和参与者均自愿；分享登记卡、知识淘金便签模板"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练“知识集市”季度分享会。</span><span>下一页：学习认证：完成认证，再用岗位应用证明成长</span></footer>
+      <div class="notes">来源：仪式完整版第一篇·仪式三；分子公司篇第三篇·仪式三。讲师要点：不设人人上台指标、不做个人次数排名、不强制评奖；分享的是亲身验证、别人可用的经验/方法/教训；门店轻量形式为午间知识角。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="30 学习认证：完成认证，再用岗位应用证明成长">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>30 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>学习认证：完成认证，再用岗位应用证明成长</h1>
+        <div class="visual-stage"><img src="p30-main.webp" alt="两级阶梯：完成认证 → 完成应用；下方标注触发、角色、记录与权益边界。 核心节点：完成认证、完成应用；必修学时达标且考核通过；1项经验证的岗位应用+直属上级确认；认证播报、授章、应用证据、学习护照/电子档案"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练学习认证里程碑仪式。</span><span>下一页：入职欢迎：让新人第一天知道自己被接住</span></footer>
+      <div class="notes">来源：仪式完整版第一篇·仪式四；集团篇第三篇·仪式三。讲师要点：第一年度只试行两级记录；不做复杂积分商城，不自动产生福利；其他权益仅按已批准制度。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="31 入职欢迎：让新人第一天知道自己被接住">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>31 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>入职欢迎：让新人第一天知道自己被接住</h1>
+        <div class="visual-stage"><img src="p31-main.webp" alt="五步欢迎流程；右侧列门店 10 分钟版。 核心节点：“契约树·新叶初生”；介绍新人、一圈一名、指定迎新天使、欢迎卡和绿植、合影；迎新天使、认识伙伴、留下记忆"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练入职欢迎仪式。</span><span>下一页：入职周年：记住“我在中膳的第N年”</span></footer>
+      <div class="notes">来源：仪式完整版第二篇·仪式一；分子公司篇第三篇·仪式四；门店篇微仪式一。讲师要点：照片和上墙先征得新人同意；不愿拍照时只留欢迎卡，仍视为完成。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="32 入职周年：记住“我在中膳的第N年”">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>32 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>入职周年：记住“我在中膳的第N年”</h1>
+        <div class="visual-stage"><img src="p32-main.webp" alt="周年触发流程；上层标准—分子公司执行—个人选择三栏。 核心节点：“年轮·我在中膳的第N年”；周年信物标准（总部定，你执行）；执行流程；5周年以上：家人祝福视频"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练入职周年纪念。</span><span>下一页：家庭开放日：让家人看见你的工作世界</span></footer>
+      <div class="notes">来源：仪式完整版第二篇·仪式二；分子公司篇第三篇·仪式五。讲师要点：家人祝福视频和公开表达均先征得本人同意；信物由既定物料体系提供，不个人垫资。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="33 家庭开放日：让家人看见你的工作世界">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>33 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>家庭开放日：让家人看见你的工作世界</h1>
+        <div class="visual-stage"><img src="p33-main.webp" alt="先决条件闸门 → 半天核心流程 → 条件不足时替代方案。 核心节点：“家人·看见我的世界”；食安、场地、预算和审批评估；核心流程；不进后厨；可用家属餐替代；可选项目制"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练家庭开放日。</span><span>下一页：感恩便签：一句“谢谢”被看见</span></footer>
+      <div class="notes">来源：仪式完整版第二篇·仪式三；分子公司篇第三篇·仪式六；仪式完整版 0.1、0.2。讲师要点：不是所有门店必做；未完成评估或审批不得自行承诺举办。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="34 感恩便签：一句“谢谢”被看见">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>34 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>感恩便签：一句“谢谢”被看见</h1>
+        <div class="visual-stage"><img src="p34-main.webp" alt="3 分钟短流程，视觉焦点为感恩墙，旁置“代号/同意/自选上墙”边界卡。 核心节点：“谢谢你，被我看见”；发便签、写、贴、收尾；每月最后一周周三；默认使用代号、写真人姓名先获同意；是否上墙由本人选择；不用收、不用统计、不用评比"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练感恩日/感恩便签。</span><span>下一页：告别：体面离开，也是对留下的人负责</span></footer>
+      <div class="notes">来源：仪式完整版第二篇·仪式四；分子公司篇第三篇·仪式七；门店篇微仪式三。讲师要点：门店唯一固定月度必做；参与和内容不可排名、不可强迫，便签数量不作绩效。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="35 告别：体面离开，也是对留下的人负责">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>35 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>告别：体面离开，也是对留下的人负责</h1>
+        <div class="visual-stage"><img src="p35-main.webp" alt="先选择后执行的决策树；公开版五步流程。 核心节点：“好好说再见”；公开版、安静版、不举办；谢谢你圈、店长说话、签名卡、最后一张合影（可选）；先私下确认本人意愿"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练告别仪式。</span><span>下一页：疯狂星期二：把大胆想法变成可验证尝试</span></footer>
+      <div class="notes">来源：仪式完整版第二篇·仪式五；分子公司篇第三篇·仪式八；门店篇微仪式七。讲师要点：涉及纪律调查、争议或安全风险时先请 HR 判断；拒绝公开或不举办均为“已确认”，不作负面评价。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="36 疯狂星期二：把大胆想法变成可验证尝试">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>36 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>疯狂星期二：把大胆想法变成可验证尝试</h1>
+        <div class="visual-stage"><img src="p36-main.webp" alt="创意提出—回应—试行/上报—复盘的闭环。 核心节点：“疯狂星期二”——创新快闪日；你的推动动作；改善提案；不强制评奖，但必须回应"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练“疯狂星期二”创新快闪日。</span><span>下一页：拜师礼：把传帮带变成双方承诺</span></footer>
+      <div class="notes">来源：仪式完整版第三篇·创新文化；分子公司篇第三篇·仪式九。讲师要点：总部/分子公司用快闪日，门店用疯狂小黑板；需要资源或有风险的建议向上反馈。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="37 拜师礼：把传帮带变成双方承诺">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>37 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>拜师礼：把传帮带变成双方承诺</h1>
+        <div class="visual-stage"><img src="p37-main.webp" alt="五步师徒承诺流程；并列门店 5 分钟版。 核心节点：“拜师礼·薪火相传”；介绍、敬茶、师父三句话、徒弟一句话、握手/击掌；师父、徒弟、见证人；师徒公约"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练拜师礼。</span><span>下一页：A3之夜：把失败变成行动计划</span></footer>
+      <div class="notes">来源：仪式完整版第三篇·师徒文化；分子公司篇第三篇·仪式十；门店篇微仪式五。讲师要点：条件有限可用水和手写 A4 纸简化物料，但不能省去明确责任与尊重；独立上岗检查按原文要求。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="38 A3之夜：把失败变成行动计划">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>38 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>A3之夜：把失败变成行动计划</h1>
+        <div class="visual-stage"><img src="p38-main.webp" alt="A3 六步画布，外侧加异常升级红线。 核心节点：“A3之夜”——失败分享与行动计划；问题描述、现状分析、根因分析、对策措施、效果确认、标准化；谁来讲"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练“A3之夜”。</span><span>下一页：庆生：用一件真事让寿星被记住</span></footer>
+      <div class="notes">来源：仪式完整版第三篇·复盘文化；分子公司篇第三篇·仪式十一。讲师要点：A3 不是追责会；食安、合规、舞弊、人身安全问题必须按正式机制升级，不能留在会议室。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="39 庆生：用一件真事让寿星被记住">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>39 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>庆生：用一件真事让寿星被记住</h1>
+        <div class="visual-stage"><img src="p39-main.webp" alt="三选一决策树；公开版展开5分钟流程，旁列预算边界。 核心节点：先私下选择公开版、安静版、不举办；公开版：围拢、生日歌/简餐、店长说真事、三个词、贺卡；安静版：私下贺卡或一句祝福；不举办：不公开生日、日期或照片"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练道法·庆生仪式。</span><span>下一页：入堂：确认身份，也确认共同的文化承诺</span></footer>
+      <div class="notes">来源：仪式完整版第四篇·庆生仪式；分子公司篇第三篇·仪式十二；门店篇微仪式二。讲师要点：生日信息、发言、影像按本人选择；仅使用已批准经费，无预算用签名贺卡，店长和员工不垫资。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="40 入堂：确认身份，也确认共同的文化承诺">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>40 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>入堂：确认身份，也确认共同的文化承诺</h1>
+        <div class="visual-stage"><img src="p40-main.webp" alt="入堂核心流程与“可调范围”双栏结构。 核心节点：道法·入堂仪式；新增走心细节；核心步骤、誓词、代号授予流程、徽章样式；不可调、可调、禁止"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练道法·入堂仪式。</span><span>下一页：表彰：让好行为被看见，不只看业绩</span></footer>
+      <div class="notes">来源：仪式完整版第四篇·入堂仪式；集团篇第三篇·仪式六。讲师要点：属地化只能调整场地、茶点、地方文化元素等允许范围；不得省略核心步骤或用福利替代仪式感。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="41 表彰：让好行为被看见，不只看业绩">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>41 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>表彰：让好行为被看见，不只看业绩</h1>
+        <div class="visual-stage"><img src="p41-main.webp" alt="“真实事例—公开表扬—呈现荣誉”三步；分层奖项边界说明。 核心节点：道法·表彰仪式；新增走心细节；分子公司级奖项（你可以自设）；每月之星；评选标准——不只看业绩"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练道法·表彰仪式。</span><span>下一页：文化联席会+健康度仪表盘：从数据到干预动作</span></footer>
+      <div class="notes">来源：仪式完整版第四篇·表彰仪式；分子公司篇第三篇·仪式十四；门店篇微仪式四。讲师要点：分子公司可在原文授权范围内设置奖项；不得以未批准奖金、晋升或处分作课程承诺。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="42 文化联席会+健康度仪表盘：从数据到干预动作">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>42 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>文化联席会+健康度仪表盘：从数据到干预动作</h1>
+        <div class="visual-stage"><img src="p42-main.webp" alt="联席会三级架构，仪表盘反馈至行动关闭。 核心节点：三级联席会架构；集团文化委员会标准议程；文化健康度仪表盘；从仪表盘到干预动作；数据采集SOP"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练文化治理机制。</span><span>下一页：年度文化盛典：把全年故事连成一条叙事线</span></footer>
+      <div class="notes">来源：集团篇第三篇·仪式一。讲师要点：治理机制是总部/事业部主责；验收看问题关闭和动作改善，不以开会次数或照片替代效果。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="43 年度文化盛典：把全年故事连成一条叙事线">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>43 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>年度文化盛典：把全年故事连成一条叙事线</h1>
+        <div class="visual-stage"><img src="p43-main.webp" alt="年度准备—现场叙事—表彰/沉淀的时间线。 核心节点：年度文化盛典；总体设计原则；年度盛典奖项设计；年度盛典的叙事线；年度节奏"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练年度文化盛典。</span><span>下一页：上界：资格审批在前，仪式见证在后</span></footer>
+      <div class="notes">来源：集团篇第三篇·仪式四。讲师要点：总部负责奖项设计和总体叙事；分子公司选送案例和人员，门店按通知参与，不自行复制大型活动。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="44 上界：资格审批在前，仪式见证在后">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>44 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>上界：资格审批在前，仪式见证在后</h1>
+        <div class="visual-stage"><img src="p44-main.webp" alt="“评审批次—获批名单门—物料支持—仪式执行”的门控流程。 核心节点：Q2、Q4评审批次；有总部获批名单才办、无名单N/A；资格评审、名单批准、境界盲盒/物料支持、仪式执行；总部主审、分子公司组织、门店按通知参加"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练上界仪式。</span><span>下一页：SOP标准化：让每次仪式既一致又有温度</span></footer>
+      <div class="notes">来源：集团篇第三篇·仪式五；分子公司篇第三篇·仪式十六；仪式完整版 0.1。讲师要点：仪式不替代资格审批；名单与晋升规则以有权机构的已批准决定为准；不得为完成率临时造名单或补办。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="45 SOP标准化：让每次仪式既一致又有温度">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>45 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>SOP标准化：让每次仪式既一致又有温度</h1>
+        <div class="visual-stage"><img src="p45-main.webp" alt="标准件、可调件、禁止项与迭代反馈闭环。 核心节点：仪式SOP标准化——文化产品输出；可调范围标注；SOP迭代机制；核心流程、物料清单、话术脚本、成本预算"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练仪式 SOP 标准化。</span><span>下一页：就职：新角色先公开承诺，也先听团队期待</span></footer>
+      <div class="notes">来源：集团篇第三篇·仪式六；仪式完整版第零篇、第四篇。讲师要点：这是总部/事业部的产品输出责任；门店和分子公司在授权范围内执行，不自行改写核心。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="46 就职：新角色先公开承诺，也先听团队期待">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>46 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>就职：新角色先公开承诺，也先听团队期待</h1>
+        <div class="visual-stage"><img src="p46-main.webp" alt="四步晨会流程；上级、新任者、团队三方对话。 核心节点：宣布任命、新店长说话、全班每人说1句话、新店长回应；你：上级（分子公司负责人或前任店长）；任命书（分子公司提供）"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练新店长/新班长就职仪式。</span><span>下一页：每月之星：表彰真实好行为</span></footer>
+      <div class="notes">来源：分子公司篇第三篇·仪式十五；门店篇微仪式六。讲师要点：仪式不等于任命审批；任命决定与权限须在仪式前已完成。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="47 每月之星：表彰真实好行为">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>47 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>每月之星：表彰真实好行为</h1>
+        <div class="visual-stage"><img src="p47-main.webp" alt="5 分钟表彰卡，中心是“说真事”，旁列四类提名证据。 核心节点：每月第一个晨会，可并入月度经营分析会；宣布、掌声、店长说真事、获奖者自愿说一句、贴荣誉墙；帮同事、客户表扬、改善提案、面对困难；不只看业绩"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练每月之星。</span><span>下一页：疯狂小黑板：让每一个想法都得到回应</span></footer>
+      <div class="notes">来源：门店篇微仪式四；分子公司篇第三篇·仪式十四。讲师要点：建议做，不为评选而造事；获奖者发言不强制；小纪念品仅在已有批准预算和制度时配置，店长不垫资。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="48 疯狂小黑板：让每一个想法都得到回应">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>48 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>疯狂小黑板：让每一个想法都得到回应</h1>
+        <div class="visual-stage"><img src="p48-main.webp" alt="一日三段流程，接入改善提案和向上反馈。 核心节点：早上、全天、下班前；如果这个店是你的，你会做一件什么不一样的事？；48小时内标记“已看见”；采纳/不采纳/需完善"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练疯狂小黑板。</span><span>下一页：午间知识角：自愿分享一个马上能用的技巧</span></footer>
+      <div class="notes">来源：门店篇微仪式八；分子公司篇 3.5.2；仪式完整版 0.1。讲师要点：可匿名，不强制评奖；暂不采纳也要说明原因，资源或风险问题按正式路径处理。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="49 午间知识角：自愿分享一个马上能用的技巧">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>49 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">单仪式实操</p>
+        <h1>午间知识角：自愿分享一个马上能用的技巧</h1>
+        <div class="visual-stage"><img src="p49-main.webp" alt="10 分钟“演示—试试—散会”微流程。 核心节点：午饭后休息时间；每月1-2次；自愿参加；一个刀法、调味比例、摆盘技巧、清理方法、客户沟通方式、Excel小技巧；不是培训，不是任务"></div>
+      </main>
+      <footer class="deck-footer"><span>完整演练午间知识角。</span><span>下一页：真、短、看：让每个仪式回到日常管理</span></footer>
+      <div class="notes">来源：门店篇微仪式九；仪式完整版第一篇·仪式三。讲师要点：不要求全员签到或提交心得；内容来自一线真实经验，必要时由文化联络员协助沉淀。</div>
+    </section>
+
+    <section class="slide visual-slide" data-title="50 真、短、看：让每个仪式回到日常管理">
+      <header class="slide-header"><span>文化仪式三层落地实操课</span><b>50 / 50</b></header>
+      <main class="slide-main">
+        <p class="kicker">收束</p>
+        <h1>真、短、看：让每个仪式回到日常管理</h1>
+        <div class="visual-stage"><img src="p50-main.webp" alt="月度节奏表 + 自检五问 + “真短看”收束卡。 核心节点：固定必做仅1个——感恩便签；触发必做、建议做、自愿参与、未发生填N/A；自检5问；主持人常见错误TOP5；5个应急话术；真、短、看"></div>
+      </main>
+      <footer class="deck-footer"><span>用节奏、自检和主持要点完成课程收束。</span><span>课程结束｜回到岗位完成本周第一步</span></footer>
+      <div class="notes">来源：门店篇第三至六篇、附录；仪式完整版 0.3。讲师要点：最终演练从逐仪式页任选一个场景；不强迫情绪表达，不把冷场视作失败。</div>
+    </section>
+  </div>
+  <script data-source="assets/runtime.js">
+/* html-ppt :: runtime.js
+ * Keyboard-driven deck runtime. Zero dependencies.
+ *
+ * Features:
+ *   ← → / space / PgUp PgDn / Home End  navigation
+ *   F  fullscreen
+ *   S  speaker notes overlay
+ *   O  slide overview grid
+ *   T  cycle themes (reads data-themes on <html> or <body>)
+ *   A  cycle demo animation on current slide
+ *   URL hash #/N  deep-link to slide N (1-based)
+ *   Progress bar auto-managed
+ */
+(function () {
+  'use strict';
+
+  const ANIMS = ['fade-up','fade-down','fade-left','fade-right','rise-in','drop-in',
+    'zoom-pop','blur-in','glitch-in','typewriter','neon-glow','shimmer-sweep',
+    'gradient-flow','stagger-list','counter-up','path-draw','parallax-tilt',
+    'card-flip-3d','cube-rotate-3d','page-turn-3d','perspective-zoom',
+    'marquee-scroll','kenburns','confetti-burst','spotlight','morph-shape','ripple-reveal'];
+
+  function ready(fn){ if(document.readyState!='loading')fn(); else document.addEventListener('DOMContentLoaded',fn);}
+
+  ready(function () {
+    const deck = document.querySelector('.deck');
+    if (!deck) return;
+    const slides = Array.from(deck.querySelectorAll('.slide'));
+    if (!slides.length) return;
+
+    let idx = 0;
+    const total = slides.length;
+
+    // progress bar
+    let bar = document.querySelector('.progress-bar');
+    if (!bar) {
+      bar = document.createElement('div');
+      bar.className = 'progress-bar';
+      bar.innerHTML = '<span></span>';
+      document.body.appendChild(bar);
+    }
+    const barFill = bar.querySelector('span');
+
+    // notes overlay
+    let notes = document.querySelector('.notes-overlay');
+    if (!notes) {
+      notes = document.createElement('div');
+      notes.className = 'notes-overlay';
+      document.body.appendChild(notes);
+    }
+
+    // overview
+    let overview = document.querySelector('.overview');
+    if (!overview) {
+      overview = document.createElement('div');
+      overview.className = 'overview';
+      slides.forEach((s, i) => {
+        const t = document.createElement('div');
+        t.className = 'thumb';
+        const title = s.getAttribute('data-title') ||
+          (s.querySelector('h1,h2,h3')||{}).textContent || ('Slide '+(i+1));
+        t.innerHTML = '<div class="n">'+(i+1)+'</div><div class="t">'+title.trim().slice(0,80)+'</div>';
+        t.addEventListener('click', () => { go(i); toggleOverview(false); });
+        overview.appendChild(t);
+      });
+      document.body.appendChild(overview);
+    }
+
+    function go(n){
+      n = Math.max(0, Math.min(total-1, n));
+      slides.forEach((s,i) => {
+        s.classList.toggle('is-active', i===n);
+        s.classList.toggle('is-prev', i<n);
+      });
+      idx = n;
+      barFill.style.width = ((n+1)/total*100)+'%';
+      const numEl = document.querySelector('.slide-number');
+      if (numEl) { numEl.setAttribute('data-current', n+1); numEl.setAttribute('data-total', total); }
+      // notes
+      const note = slides[n].querySelector('.notes');
+      notes.innerHTML = note ? note.innerHTML : '';
+      // hash
+      if (location.hash !== '#/'+(n+1)) history.replaceState(null,'','#/'+(n+1));
+      // re-trigger entry animations
+      slides[n].querySelectorAll('[data-anim]').forEach(el => {
+        const a = el.getAttribute('data-anim');
+        el.classList.remove('anim-'+a);
+        void el.offsetWidth;
+        el.classList.add('anim-'+a);
+      });
+      // counter-up
+      slides[n].querySelectorAll('.counter').forEach(el => {
+        const target = parseFloat(el.getAttribute('data-to')||el.textContent);
+        const dur = parseInt(el.getAttribute('data-dur')||'1200',10);
+        const start = performance.now();
+        const from = 0;
+        function tick(now){
+          const t = Math.min(1,(now-start)/dur);
+          const v = from + (target-from)*(1-Math.pow(1-t,3));
+          el.textContent = (target % 1 === 0) ? Math.round(v) : v.toFixed(1);
+          if (t<1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+
+    function toggleNotes(force){ notes.classList.toggle('open', force!==undefined?force:!notes.classList.contains('open')); }
+    function toggleOverview(force){ overview.classList.toggle('open', force!==undefined?force:!overview.classList.contains('open')); }
+    function fullscreen(){ const el=document.documentElement;
+      if (!document.fullscreenElement) el.requestFullscreen&&el.requestFullscreen();
+      else document.exitFullscreen&&document.exitFullscreen();
+    }
+
+    // theme cycling
+    const root = document.documentElement;
+    const themesAttr = root.getAttribute('data-themes') || document.body.getAttribute('data-themes');
+    const themes = themesAttr ? themesAttr.split(',').map(s=>s.trim()).filter(Boolean) : [];
+    let themeIdx = 0;
+    function cycleTheme(){
+      if (!themes.length) return;
+      themeIdx = (themeIdx+1) % themes.length;
+      const name = themes[themeIdx];
+      let link = document.getElementById('theme-link');
+      if (!link) {
+        link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.id = 'theme-link';
+        document.head.appendChild(link);
+      }
+      // resolve relative to runtime's location
+      const themePath = (root.getAttribute('data-theme-base') || 'assets/themes/') + name + '.css';
+      link.href = themePath;
+      root.setAttribute('data-theme', name);
+      const ind = document.querySelector('.theme-indicator');
+      if (ind) ind.textContent = name;
+    }
+
+    // animation cycling on current slide
+    let animIdx = 0;
+    function cycleAnim(){
+      animIdx = (animIdx+1) % ANIMS.length;
+      const a = ANIMS[animIdx];
+      const target = slides[idx].querySelector('[data-anim-target]') || slides[idx];
+      ANIMS.forEach(x => target.classList.remove('anim-'+x));
+      void target.offsetWidth;
+      target.classList.add('anim-'+a);
+      target.setAttribute('data-anim', a);
+      const ind = document.querySelector('.anim-indicator');
+      if (ind) ind.textContent = a;
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.metaKey||e.ctrlKey||e.altKey) return;
+      switch (e.key) {
+        case 'ArrowRight': case ' ': case 'PageDown': case 'Enter': go(idx+1); e.preventDefault(); break;
+        case 'ArrowLeft': case 'PageUp': case 'Backspace': go(idx-1); e.preventDefault(); break;
+        case 'Home': go(0); break;
+        case 'End': go(total-1); break;
+        case 'f': case 'F': fullscreen(); break;
+        case 's': case 'S': toggleNotes(); break;
+        case 'o': case 'O': toggleOverview(); break;
+        case 't': case 'T': cycleTheme(); break;
+        case 'a': case 'A': cycleAnim(); break;
+        case 'Escape': toggleOverview(false); toggleNotes(false); break;
+      }
+    });
+
+    // hash deep-link
+    function fromHash(){
+      const m = /^#\/(\d+)/.exec(location.hash||'');
+      if (m) go(Math.max(0, parseInt(m[1],10)-1));
+    }
+    window.addEventListener('hashchange', fromHash);
+    fromHash();
+    go(idx);
+  });
+})();
+
+</script>
+  <nav class="cw-nav" aria-label="演示控制">
+    <button type="button" data-cw-action="prev" aria-label="上一页">←</button>
+    <span id="cw-page-status" aria-live="polite">01 / 50</span>
+    <button type="button" data-cw-action="next" aria-label="下一页">→</button>
+    <i aria-hidden="true"></i>
+    <button type="button" data-cw-action="overview" aria-label="页面总览">▦</button>
+    <button type="button" data-cw-action="notes" aria-label="讲师备注">S</button>
+    <button type="button" data-cw-action="fullscreen" aria-label="全屏">⛶</button>
+  </nav>
+  <script data-source="2027-strategy-inspired-layout">
+  (() => {
+    const fit = () => {
+      document.documentElement.style.setProperty('--deck-scale',
+        Math.min(window.innerWidth / 1600, window.innerHeight / 900).toFixed(5));
+    };
+    fit();
+    window.addEventListener('resize', fit, {passive:true});
+    window.addEventListener('DOMContentLoaded', () => {
+      const slides = [...document.querySelectorAll('.courseware-deck .slide')];
+      const status = document.getElementById('cw-page-status');
+      const prev = document.querySelector('[data-cw-action="prev"]');
+      const next = document.querySelector('[data-cw-action="next"]');
+      const update = () => {
+        const current = Math.max(0, slides.findIndex(s => s.classList.contains('is-active')));
+        status.textContent = String(current + 1).padStart(2, '0') + ' / ' + String(slides.length).padStart(2, '0');
+        prev.disabled = current === 0;
+        next.disabled = current === slides.length - 1;
+      };
+      const observer = new MutationObserver(update);
+      slides.forEach(slide => observer.observe(slide, {attributes:true,attributeFilter:['class']}));
+      update();
+      document.querySelector('.cw-nav').addEventListener('click', event => {
+        const action = event.target.closest('[data-cw-action]')?.dataset.cwAction;
+        const key = {prev:'ArrowLeft',next:'ArrowRight',overview:'o',notes:'s',fullscreen:'f'}[action];
+        if (key) document.dispatchEvent(new KeyboardEvent('keydown', {key,bubbles:true}));
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
